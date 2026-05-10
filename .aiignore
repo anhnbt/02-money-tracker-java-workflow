@@ -1,0 +1,24 @@
+# =========================================================================
+# FILE CẤU HÌNH .AIIGNORE - BẢO MẬT DỮ LIỆU KHỎI AI AGENT
+# =========================================================================
+# Mọi file/thư mục được khai báo ở đây sẽ bị ẩn hoàn toàn khỏi Agent.
+# AI không thể đọc (read) và không thể phân tích các file này.
+
+# 1. Bỏ qua các file cấu hình chứa thông tin nhạy cảm (Keys, Passwords)
+.env
+.env.production
+src/main/resources/application-prod.yml
+
+# 2. Bỏ qua thư mục chứa chứng chỉ bảo mật và tokens
+keys/
+credentials/
+secrets.json
+
+# 3. Bỏ qua dữ liệu khách hàng (Tránh rủi ro bị mang đi train model)
+data/customers.csv
+data/export_*.xlsx
+db/production_backup.sql
+
+# 4. Bỏ qua các thuật toán lõi "tuyệt mật" của doanh nghiệp
+src/main/java/com/moneytracker/core/SecretTradingAlgorithm.java
+src/main/java/com/moneytracker/core/FraudDetection.java
