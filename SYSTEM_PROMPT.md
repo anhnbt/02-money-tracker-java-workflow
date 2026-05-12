@@ -46,4 +46,4 @@ Hãy áp dụng quy trình Multi-Agent Ecosystem chuẩn TDD để làm tính n�
 
 ## 6. BƯỚC 6 - Lưu trữ Context
 
-- Chạy lệnh lưu tiến độ vào `backlog/01_Feature_CRUD_DAO.md` (bao gồm Done và Next Steps) để giải phóng Context Window cho session sau.
+- Chạy lệnh lưu tiến độ vào `docs/01_Feature_CRUD_DAO.md` (bao gồm Done và Next Steps) để giải phóng Context Window cho session sau.
